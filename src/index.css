@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Exo', ui-sans-serif, system-ui, sans-serif;
+  --color-brand-black: #000000;
+  --color-brand-toxic: #00FF9F;
+  --color-brand-gold: #FFD700;
+  --color-brand-purple: #9D00FF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-brand-black);
+  color: white;
+  font-family: 'Exo', -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-header {
+  font-family: 'Abolition', 'Bebas Neue', system-ui;
+  font-weight: 400;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 255, 159, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.glass-button {
+  background: linear-gradient(135deg, rgba(0, 255, 159, 0.08) 0%, rgba(157, 0, 255, 0.08) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 159, 0.4);
+  box-shadow: 0 0 10px rgba(0, 255, 159, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.glass-button:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 159, 0.6), inset 0 0 10px rgba(0, 255, 159, 0.3);
+}
+
+@keyframes logo-glitch {
+  0% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+
+  10% {
+    transform: translate(-3px, 3px);
+    clip-path: inset(10% 0 40% 0);
+    filter: hue-rotate(90deg);
+  }
+
+  20% {
+    transform: translate(-3px, -3px);
+    clip-path: inset(30% 0 10% 0);
+  }
+
+  30% {
+    transform: translate(3px, 3px);
+    clip-path: inset(50% 0 30% 0);
+    filter: hue-rotate(180deg);
+  }
+
+  40% {
+    transform: translate(3px, -3px);
+    clip-path: inset(10% 0 60% 0);
+  }
+
+  50% {
+    transform: translate(-3px, 3px);
+    clip-path: inset(0 40% 0 10%);
+  }
+
+  60% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+
+  100% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-glitch {
+  animation: logo-glitch 0.4s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+@keyframes wobble {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-4px) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateX(4px) rotate(2deg);
+  }
+
+  75% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+}
+
+.animate-wobble:hover {
+  animation: wobble 0.3s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
