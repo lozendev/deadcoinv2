@@ -34,7 +34,7 @@ export default function Hero() {
       {/* Main Hero Image - Touching Top Border, Resized */}
       <div className="absolute top-0 right-0 h-[96%] w-auto z-0 pointer-events-none opacity-90 overflow-hidden">
         <img
-          src="/deadcoinv2/jpegs/heroV2.png"
+          src="/deadcoinv2/jpegs/heroStill.jpg"
           alt="Zombie Character"
           className="h-full w-auto object-cover object-left-top"
         />
