@@ -26,7 +26,7 @@ export default function HowToBuy() {
       {/* Background Image: h2bBG.png - 10% Opacity, Center-Right (Even Larger) */}
       <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[90%] h-full z-0 pointer-events-none opacity-5">
         <img
-          src="/deadcoinv2/jpegs/h2bbg.png"
+          src="/jpegs/h2bbg.png"
           alt=""
           className="w-full h-full object-contain object-right"
         />
@@ -35,7 +35,7 @@ export default function HowToBuy() {
       {/* Featured Image: hang.png - Touching Top, Resized */}
       <div className="absolute top-0 right-[2%] h-[90vh] w-auto z-10 pointer-events-none hidden md:block">
         <img
-          src="/deadcoinv2/jpegs/hang.png"
+          src="/jpegs/hang.png"
           alt="Hanging Zombie"
           className="h-full w-auto object-contain object-right"
         />

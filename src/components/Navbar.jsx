@@ -17,7 +17,7 @@ export default function Navbar() {
       >
         <div className={`relative ${isHovered ? 'animate-glitch' : ''}`}>
           <img 
-            src={isHovered ? "/deadcoinv2/logoyellow.png" : "/deadcoinv2/Logo.png"} 
+            src={isHovered ? "/logoyellow.png" : "/Logo.png"} 
             alt="Logo" 
             className="h-[4.5rem] w-auto object-contain transition-all duration-75" 
           />

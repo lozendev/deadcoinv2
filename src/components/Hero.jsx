@@ -48,7 +48,7 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
-        <source src="./heroV1.webm" type="video/webm" />
+        <source src="/heroV1.webm" type="video/webm" />
       </video>
 
       {/* Content Container */}
@@ -177,7 +177,7 @@ export default function Hero() {
           <div className="absolute top-[-50%] right-[-50%] w-full h-full bg-[var(--color-brand-toxic)] mix-blend-screen filter blur-[80px] opacity-20 rounded-full"></div>
           <div className="absolute bottom-[-50%] left-[-50%] w-full h-full bg-[var(--color-brand-purple)] mix-blend-screen filter blur-[80px] opacity-10 rounded-full"></div>
 
-          <img src="/deadcoinv2/hand.png" alt="Hand Icon" className="absolute top-4 right-4 w-10 h-10 object-contain z-20 opacity-90 drop-shadow-[0_0_5px_rgba(255,255,255,0.4)]" />
+          <img src="/hand.png" alt="Hand Icon" className="absolute top-4 right-4 w-10 h-10 object-contain z-20 opacity-90 drop-shadow-[0_0_5px_rgba(255,255,255,0.4)]" />
 
           <h2 className="text-xl md:text-2xl font-extrabold text-white tracking-widest relative z-10 uppercase drop-shadow-[0_0_15px_rgba(0,255,159,0.5)]">
             DEAD <span className="text-[#00FF9F]">#1</span>
