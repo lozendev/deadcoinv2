@@ -64,7 +64,7 @@ export default function Roadmap() {
       {/* Center Image (fu.png) */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[40vh] lg:h-[45vh] w-auto pointer-events-none z-10 flex justify-center items-end">
         <img
-          src="/jpegs/fu.png"
+          src="./jpegs/fu.png"
           alt="Roadmap Character"
           className="h-full w-auto object-contain object-bottom"
         />

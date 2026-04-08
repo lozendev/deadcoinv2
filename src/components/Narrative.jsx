@@ -37,7 +37,7 @@ export default function Narrative() {
       {/* Large Background Image - Increased Size (2/3 coverage) */}
       <div className="absolute bottom-0 left-0 w-[66%] h-[85%] pointer-events-none z-10 flex items-end">
         <img 
-          src="/jpegs/n1.png" 
+          src="./jpegs/n1.png" 
           alt="Deadcoin Graphic" 
           className="w-full h-full object-contain object-left-bottom m-0 p-0"
         />
@@ -51,7 +51,7 @@ export default function Narrative() {
             <span className="inline-block w-4 h-4 md:w-5 md:h-5 rounded-full bg-[#1A1A1A] shadow-[0_0_15px_rgba(0,255,159,0.5)] border border-[#00FF9F]/30 mr-4 align-middle"></span>
             In a market obsessed with narratives,{' '}
             <img 
-              src="/jpegs/n2.png" 
+              src="./jpegs/n2.png" 
               alt="" 
               className="inline-block h-[0.9em] w-auto rounded-full align-middle mx-1 md:mx-2 translate-y-[-0.05em]"
             />
@@ -59,7 +59,7 @@ export default function Narrative() {
             <span className="text-black/30 inline whitespace-normal">
               How many times will this coin be proclaimed $DEAD{' '}
               <img 
-                src="/jpegs/n3.png" 
+                src="./jpegs/n3.png" 
                 alt="" 
                 className="inline-block h-[0.9em] w-auto rounded-full align-middle mx-1 translate-y-[-0.05em]"
               />

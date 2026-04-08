@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Top Left: Logo */}
           <div className="flex items-center">
             <img
-              src="/logoyellow.png"
+              src="./logoyellow.png"
               alt="Dead Coin Logo"
               className="h-[4.5rem] w-auto object-contain animate-glitch"
             />
@@ -42,7 +42,7 @@ export default function Footer() {
           {/* Character Image: UNCHOPPED and touching bottom */}
           <div className="absolute bottom--10 left-1/2 -translate-x-1/2 h-[75vh] md:h-[60vh] w-auto pointer-events-none z-20 flex items-end justify-center">
             <img
-              src="/jpegs/foot.png"
+              src="./jpegs/foot.png"
               alt="Footer Character"
               className="h-full w-auto object-contain object-bottom"
             />
