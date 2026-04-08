@@ -10,7 +10,8 @@ export default function Media() {
       <div 
         className="absolute inset-0 w-full h-full z-0"
         style={{
-          backgroundImage: 'url(./jpegs/media5.jpg)',
+          backgroundImage: 'url(/deadcoinv2/jpegs/media5.jpg)',
+
 
           backgroundSize: 'cover',
           backgroundPosition: 'center',

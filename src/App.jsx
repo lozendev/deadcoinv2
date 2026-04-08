@@ -24,7 +24,7 @@ function App() {
       <Media />
       <div className="relative w-full" 
         style={{ 
-          backgroundImage: 'url(./jpegs/footbg.jpg)', 
+          backgroundImage: 'url(/deadcoinv2/jpegs/footbg.jpg)', 
           backgroundSize: 'cover', 
           backgroundPosition: 'center', 
           backgroundRepeat: 'no-repeat' 
