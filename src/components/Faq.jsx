@@ -50,7 +50,7 @@ export default function Faq() {
 
       
       {/* Ledge Image */}
-      <img src="/jpegs/ledge.png" alt="" className="absolute top-12 md:top-20 right-0 w-[200px] md:w-[350px] h-auto pointer-events-none z-10" />
+      <img src="/deadcoinv2/jpegs/ledge.png" alt="" className="absolute top-12 md:top-20 right-0 w-[200px] md:w-[350px] h-auto pointer-events-none z-10" />
 
       {/* FAQ Header (Identical to "DIE n ARISE" from Hero) */}
       <div className="w-full text-center flex justify-center mt-12 mb-20 md:mb-32 relative z-20">
