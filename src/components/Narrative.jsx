@@ -71,7 +71,7 @@ export default function Narrative() {
         {/* Sub-sentence - Hero Style & Moved Sligtly Lower */}
         <div className="absolute top-[38%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[320px] md:max-w-[420px] pointer-events-auto z-30">
           <p className="font-sans text-[7pt] md:text-[9pt] leading-[1.3] opacity-60 uppercase tracking-[0.2em] text-black text-center md:text-left drop-shadow-sm">
-            Dead Coin lives in a cycle of reincarnation. We embrace the rot, feed on the FUD, and when the chart finally hits rock bottom, we simply rise again with a fresh coat of paint and a #2 tag.
+            Dead Coin lives in a cycle of reincarnation. We embrace the bad news, feed on the FUD, and when the chart finally hits rock bottom, we simply rise again with a fresh coat of paint and a #2 tag.
           </p>
         </div>
 
