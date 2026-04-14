@@ -108,7 +108,7 @@ export default function Hero() {
           <div className="absolute -bottom-36 left-28 md:left-44 lg:left-52 flex flex-col items-start gap-4 max-w-[15rem] md:max-w-[20rem] z-50">
             <p className="font-sans text-[6pt] md:text-[8pt] leading-[1.3] opacity-60 uppercase tracking-[0.2em] text-white text-left">
               Everything eventually dies — memes, coins, trends, empires, even you.<br />
-              We just arise anew - the cycle is eternal. Death is just an upgrade.
+              We just arise anew. The cycle is eternal. Death is just an upgrade.
             </p>
             <button 
               onClick={(e) => scrollToSection(e, 'narrative')}
