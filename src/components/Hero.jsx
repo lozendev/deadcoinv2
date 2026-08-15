@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const scrollToSection = (e, id) => {
     e.preventDefault();
     const targetId = id.replace('#', '');
@@ -31,15 +33,6 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center pt-24 overflow-hidden">
-      {/* Main Hero Image - Touching Top Border, Resized */}
-      <div className="absolute top-0 right-0 h-[96%] w-auto z-0 pointer-events-none opacity-90 overflow-hidden">
-        <img
-          src="/jpegs/heroStill.jpg"
-          alt="Zombie Character"
-          className="h-full w-auto object-cover object-left-top"
-        />
-      </div>
-
       {/* Background Video */}
       <video
         autoPlay
@@ -65,41 +58,39 @@ export default function Hero() {
             <div className="absolute inset-0 bg-[var(--color-brand-toxic)] opacity-10 blur-[80px]"></div>
           </div>
           <h1 className="font-header text-[11vw] md:text-[177pt] uppercase leading-[0.71] text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.4)]">
-            DIE n
+            WE DIE.
           </h1>
           <div className="flex items-center gap-2 group">
             <div className="font-sans text-[7pt] md:text-[9pt] leading-[1.1] opacity-70 uppercase tracking-[0.2em] text-white text-left shrink-0 ml-4 md:ml-8">
               We're just too<br />stubborn to<br />stay dead.
             </div>
             <h1 className="font-header text-[11vw] md:text-[177pt] uppercase leading-[0.71] text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.4)] mix-blend-overlay opacity-90 md:ml-8 lg:ml-16">
-              ARISE
+              ARISE.
             </h1>
           </div>
           <h1 className="font-header text-[11vw] md:text-[177pt] uppercase leading-[0.71] text-transparent bg-clip-text bg-gradient-to-r from-[#f0c63d] to-[#f1cf30] drop-shadow-[0_0_30px_rgba(240,198,61,0.3)] pt-8 -mt-8">
-            CYCLE
+            REPEAT.
           </h1>
 
           {/* Separate Social Circles - Shifted Right under Header */}
           <div className="absolute -bottom-36 left-12 md:left-24 lg:left-32 flex flex-col items-center gap-3 z-50">
             {/* X Logo Button */}
             <a
-              href="https://x.com/"
+              href="https://x.com/nevertrulydead"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white rounded-full shadow-[0_0_20px_rgba(255,255,255,0.5)] flex items-center justify-center transition-all hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] border border-white/40 group/social"
             >
-
               <svg className="w-5 h-5 text-black transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
             </a>
 
             {/* Telegram Logo Button (Borderless) */}
             <a
-              href="https://t.me/deadcoinlol"
+              href="https://t.me/DeadcoinOnSol"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white rounded-full shadow-[0_0_20px_rgba(255,255,255,0.5)] flex items-center justify-center transition-all hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] border border-white/40 group/social"
             >
-
               <svg className="w-6 h-6 text-black group-hover/social:text-[#0088cc] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 1.589 4.86c.191.525.097.733.535.733.34 0 .49-.155.679-.34l2.274-2.21 4.73 3.496c.87.48 1.498.232 1.716-.812l3.1-14.618c.317-1.27-.481-1.847-1.313-1.428z" /></svg>
             </a>
           </div>
@@ -111,15 +102,61 @@ export default function Hero() {
               We just arise anew. The cycle is eternal. Death is just an upgrade.
             </p>
             <button 
-              onClick={(e) => scrollToSection(e, 'narrative')}
+              onClick={() => setIsModalOpen(true)}
               className="bg-white text-black px-6 py-2 rounded-full text-[7pt] md:text-[9pt] font-sans font-bold uppercase tracking-[0.2em] self-end transition-all hover:scale-110 shadow-[0_0_20px_rgba(255,255,255,0.5)] border border-white/40"
             >
-
-              narrative
+              PAST CA'S
             </button>
           </div>
         </div>
       </div>
+
+      {/* Modal Popup for PAST CA'S */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <div className="relative w-full max-w-2xl bg-black/60 border border-[#b1de42] animate-pulse-glow rounded-xl p-6 shadow-2xl">
+            {/* Close Button */}
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-white font-bold text-xl w-8 h-8 flex items-center justify-center rounded-full border border-gray-600 hover:border-white transition-all"
+            >
+              ✕
+            </button>
+
+            <h3 className="font-header text-2xl md:text-3xl text-white tracking-widest uppercase mb-6 text-center">
+              PAST CONTRACT ADDRESSES
+            </h3>
+
+            {/* Spreadsheet Grid */}
+            <div className="w-full overflow-x-auto">
+              <table className="w-full text-left border-collapse border border-gray-600 font-sans text-xs md:text-sm">
+                <thead>
+                  <tr className="border-b border-gray-600 bg-white/5">
+                    <th className="border border-gray-600 px-4 py-2 font-bold text-[#b1de42]">Version</th>
+                    <th className="border border-gray-600 px-4 py-2 font-bold text-[#b1de42]">Contract</th>
+                    <th className="border border-gray-600 px-4 py-2 font-bold text-[#b1de42]">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[...Array(10)].map((_, i) => (
+                    <tr key={i} className="border-b border-gray-600 hover:bg-white/5 transition-colors">
+                      <td className="border border-gray-600 px-4 py-2 font-semibold text-gray-300">
+                        {i === 0 ? "V1" : `V${i + 1}`}
+                      </td>
+                      <td className="border border-gray-600 px-4 py-2 text-gray-400 font-mono">
+                        {i === 0 ? "Updating..." : "-"}
+                      </td>
+                      <td className="border border-gray-600 px-4 py-2 text-gray-400">
+                        {i === 0 ? "Active" : "Upcoming"}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Right Side Navigation Menu - Horizontal Refinement */}
       <div className="absolute right-8 md:right-16 top-1/2 -translate-y-[calc(50%+150px)] z-40 flex flex-row items-center justify-end gap-2 md:gap-3">
@@ -142,7 +179,6 @@ export default function Hero() {
       {/* Right Source: Glassmorphed card */}
       <div className="absolute bottom-8 right-8 md:bottom-16 md:right-16 z-30 opacity-90 backdrop-blur-md group">
         {/* Floating Buy & Chart Cards - Top Left Offset */}
-        {/* Floating Buy & Chart Buttons - Overlapped Layout */}
         <div className="absolute -top-16 -left-16 w-64 h-32 z-40 pointer-events-none">
           <a
             href="https://pump.fun"
@@ -183,8 +219,8 @@ export default function Hero() {
             DEAD <span className="text-[#00FF9F]">#1</span>
           </h2>
 
-          <p className="text-[10px] md:text-xs text-gray-200 font-medium leading-relaxed relative z-10 mt-2 tracking-wide drop-shadow-md max-w-[90%] opacity-60 uppercase">
-            SHOULD WE DIE, AND WE LIKELY WILL, THEN HEAD ON OVER TO X FOR NEXT RELEASE NEWS.
+          <p className="text-[8.5px] md:text-xs text-gray-200 font-medium leading-tight relative z-10 mt-2 tracking-normal drop-shadow-md w-full opacity-60 uppercase">
+            YES, WE WILL LIKELY DIE.<br />SO BARE WITH ME. I WILL<br />UPDATE THE LINKS TO NEXT<br />VERSION AFTER LAUNCH.
           </p>
         </div>
       </div>

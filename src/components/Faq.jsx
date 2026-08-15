@@ -6,7 +6,9 @@ const FAQ_DATA = [
   { id: 3, question: "Are there any risks?", answer: "Yes. You might get emotionally attached to a coin that keeps dying." },
   { id: 4, question: "Why $DEAD and not $UNDEAD?", answer: "Because 99% of the time we will be dead. There's no cheating it." },
   { id: 5, question: "When will Dead Coin moon?", answer: "On the version where we finally stop dying. So… V69 maybe?" },
-  { id: 6, question: "Who is behind Dead Coin?", answer: "LozenDev. A professional failures who refuses to stay dead." },
+  { id: 6, question: "Who is behind Dead Coin?", answer: <>
+    <a href="https://www.lozen.dev" target="_blank" rel="noopener noreferrer" className="underline hover:text-black font-bold">LozenDev</a>. A professional failure who refuses to stay dead.
+  </> },
   { id: 7, question: "Why should I buy Dead Coin?", answer: "Because your other coins are boringly alive and never throw funeral parties." },
   { id: 8, question: "Is there a token burn?", answer: "Every time the coin dies, a portion of holders’ hope gets burned." },
   { id: 9, question: "What’s your marketing strategy?", answer: "Post “V2+ SOON” until something sticks. It’s genius." },

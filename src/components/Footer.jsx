@@ -12,13 +12,18 @@ export default function Footer() {
         {/* TOP ROW */}
         <div className="flex items-start justify-between w-full mb-12 md:mb-20">
           {/* Top Left: Logo */}
-          <div className="flex items-center">
+          <a 
+            href="https://www.lozen.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
             <img
               src="/logoyellow.png"
               alt="Dead Coin Logo"
               className="h-[4.5rem] w-auto object-contain animate-glitch"
             />
-          </div>
+          </a>
         </div>
 
         {/* CENTER SECTION */}
@@ -67,7 +72,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             {/* X / Twitter */}
             <a
-              href="https://www.x.com/"
+              href="https://x.com/nevertrulydead"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full shadow-[0_0_20px_rgba(255,255,255,0.5)] flex items-center justify-center transition-all hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] border border-white/40"
@@ -79,7 +84,7 @@ export default function Footer() {
 
             {/* Telegram */}
             <a
-              href="https://www.t.me/deadcoinlol"
+              href="https://t.me/DeadcoinOnSol"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full shadow-[0_0_20px_rgba(255,255,255,0.5)] flex items-center justify-center transition-all hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] border border-white/40 group/social"

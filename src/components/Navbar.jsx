@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export default function Navbar() {
   const handleCopyCA = () => {
-    navigator.clipboard.writeText(" Updating. View @lozendev for CA");
+    navigator.clipboard.writeText("CA: View X for updates");
     alert("Copied to clipboard!");
   }
 
@@ -10,7 +10,10 @@ export default function Navbar() {
 
   return (
     <nav className="absolute top-0 left-0 w-full z-[100] px-6 py-8 flex justify-between items-center bg-transparent">
-      <div 
+      <a 
+        href="https://www.lozen.dev"
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center cursor-pointer"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -22,13 +25,13 @@ export default function Navbar() {
             className="h-[4.5rem] w-auto object-contain transition-all duration-75" 
           />
         </div>
-      </div>
+      </a>
       <div className="flex-1 flex justify-center hidden sm:flex">
         <button 
           onClick={handleCopyCA}
           className="glass-button px-8 py-3 rounded-full text-sm sm:text-base tracking-wider font-semibold text-gray-200"
         >
-          CA: Updating. View @lozendev for CA
+          CA: View X for updates
         </button>
       </div>
       <div className="flex items-center">

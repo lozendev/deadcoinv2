@@ -30,11 +30,10 @@ export default function Roadmap() {
           </h2>
           <div className="font-sans text-[7pt] md:text-[9pt] leading-[1.6] opacity-70 uppercase tracking-[0.2em] text-white text-left flex flex-col gap-4">
             <p>
-              Our roadmap is simple and beautifully honest:<br />
-              the coin dies, we relaunch it as #2+,
+              Honestly, our roadmap is simply to survive.
             </p>
             <p>
-              it dies again, and we repeat the cycle with<br />
+              We are on a cycle of repeat with<br />
               fresh memes and copium <span className="font-bold text-[#f0c73c]">UNTIL</span><br />
               one version finally moons.
             </p>
@@ -43,7 +42,7 @@ export default function Roadmap() {
               that persistence beats competence.
             </p>
             <p className="mt-2 text-white/90">
-              Welcome to Dead Coin, where failure is<br />our foreplay.
+              Why do we do this to ourselves?<br />Because failure is our foreplay.
             </p>
           </div>
         </div>
